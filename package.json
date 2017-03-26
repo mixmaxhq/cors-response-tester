@@ -1,0 +1,27 @@
+{
+  "name": "cors-response-tester",
+  "version": "0.1.0",
+  "description": "Testing whether the cors module runs request handlers when the origin doesn't match.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mixmaxhq/cors-response-tester.git"
+  },
+  "author": "Jeff Wear <jeff@mixmax.com> (https://mixmax.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mixmaxhq/cors-response-tester/issues"
+  },
+  "homepage": "https://github.com/mixmaxhq/cors-response-tester#readme",
+  "dependencies": {
+    "cors": "^2.8.1",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
