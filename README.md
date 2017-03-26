@@ -1,6 +1,7 @@
 # cors-response-tester
 
-Testing whether the cors module runs request handlers when the origin doesn't match.
+Testing whether the cors module runs request handlers when the origin doesn't match,
+for https://github.com/expressjs/cors/issues/109.
 
 # Installation
 
@@ -21,5 +22,6 @@ xhr.addEventListener('load', () => console.log('response:', xhr.responseText));
 xhr.send();
 ```
 
-But note that the terminal logged "running" *twice*, i.e. the cors module still called `next` even
-though it did not set the response headers to allow the browser to read the response.
+But note that the terminal logged "running" *twice*, i.e. the cors module still called `next` for
+the request from http://underscorejs.org/, even though it did not set the response headers to allow
+the browser to read the response.
